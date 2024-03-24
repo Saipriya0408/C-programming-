@@ -1,21 +1,21 @@
-#include<stdio.h>
+ #include<stdio.h>
 int main()
 {
-	int num=121,originalnum,rev=0,rem;
+	int num=141,reversed=0,remainder,originalnum;
 	originalnum=num;
 	while(num!=0)
 	{
-		rem=num%10;
-		rev=rev*10+rem;
+		remainder=num%10;
+		reversed=reversed*10+remainder;
 		num/=10;
-	}
-	if(rev==originalnum)
-	{
+		if(originalnum==reversed)
+		{
 		printf("%d is a palindrome",originalnum);
-	}
-	else
-	{
-		printf("%d is not a palindrome",originalnum);
+		}
+		else
+		{
+			printf("%d is not a palindrome",originalnum);
+		}
 	}
 	return 0;
 }
